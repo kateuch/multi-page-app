@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router-dom'
 import style from './MainNavigation.module.css'
 
+const setActive = (isActive)=> isActive ? style.active : '';
 
 export const MainNavigation = () => {
     return <header className={style.header}>
@@ -8,10 +9,10 @@ export const MainNavigation = () => {
         <nav className={style.nav}>
             <ul >
                 <li >
-                    <NavLink to='/quotes' activeClassName={style.active}>All quotes</NavLink >
+                    <NavLink to='/quotes' className={setActive}>All quotes</NavLink >
                 </li>
                 <li>
-                <NavLink to='/newquote' activeClassName={style.active}>Add a Quote</NavLink >
+                <NavLink to='/newquote' className={setActive}>Add a Quote</NavLink >
                 </li>
                 </ul>
         </nav>
