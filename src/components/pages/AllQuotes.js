@@ -1,8 +1,9 @@
 import React from 'react';
+import {useEffect} from 'react';
+
 import QuoteList from '../quotes/QuoteList';
 import useHttp from '../hooks/use-http';
 import {getAllQuotes} from '../lib/api';
-import {useEffect} from 'react';
 import LoadingSpinner from '../UI/LoadingSpinner';
 import NoQuotesFound from '../quotes/NoQuotesFound'
 

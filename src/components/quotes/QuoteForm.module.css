@@ -39,7 +39,17 @@
   background-color: #cbf8f8;
   outline-color: teal;
 }
-
+.error input,
+.error textarea {
+  font: inherit;
+  padding: 0.35rem;
+  border-radius: 4px;
+  background-color: #f0f0f0;
+  border: 2px solid #ce2d2d;
+  display: block;
+  width: 100%;
+  font-size: 1.25rem;
+}
 .actions {
   text-align: right;
 }

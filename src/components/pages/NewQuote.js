@@ -18,7 +18,7 @@ if (status === 'completed') {
     }, [status, navigate]);
 
     const onAddQuoteHandler = quoteData => {
-        sendRequest(quoteData)
+      if (quoteData) { sendRequest(quoteData) }
     }
     return <QuoteForm isLoading = {status === 'pending'} onAddQuote={onAddQuoteHandler} />
 }
